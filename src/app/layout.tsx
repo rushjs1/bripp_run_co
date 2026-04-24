@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://bripp-run-co.netlify.app"),
   title: "Broad Ripple Run Co. | Indianapolis Run Club",
   description:
     "A friendly Broad Ripple run club built around miles, community, and the Monon Trail.",

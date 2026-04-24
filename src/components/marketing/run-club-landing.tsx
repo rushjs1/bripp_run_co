@@ -10,6 +10,7 @@ import {
   MapPin,
   MapPinned,
   MessageCircle,
+  Pizza,
   Route,
   Sparkles,
   Utensils,
@@ -64,23 +65,23 @@ const venues = [
   {
     name: "Half Liter BBQ",
     detail:
-      "Smoked meat, picnic tables, and the easiest yes after sweaty miles.",
+      "Brisket, ribs, picnic tables, and the Cap'n Crunch Rice Krispie treats nobody planned on but everybody orders.",
     badge: "BBQ",
     icon: Beef,
   },
   {
     name: "Fat Dan's",
     detail:
-      "Wings, cold drinks, and the sports bar energy your calves requested.",
-    badge: "wings",
+      "Burgers, wings, and the sports bar energy your calves earned out on the trail.",
+    badge: "burgers + wings",
     icon: Utensils,
   },
   {
     name: "The Bulldog",
     detail:
-      "A Broad Ripple standby when the plan is simple: sit down and recover.",
-    badge: "patio",
-    icon: Beer,
+      "Pizzas big enough to share and the shaded patio the run keeps ending up on.",
+    badge: "pizza + patio",
+    icon: Pizza,
   },
   {
     name: "Kilroy's",
@@ -184,7 +185,7 @@ function HeroSection() {
             </h1>
             <p className="mt-5 max-w-[57ch] text-xl text-pretty text-olive sm:text-lg">
               A casual Broad Ripple run crew built around easy miles, hot-day
-              pool dips, and post-run hangs at Half Liter, Fat Dan&apos;s, The
+              pool dips, and post-run plates at Half Liter, Fat Dan&apos;s, The
               Bulldog, or Kilroy&apos;s.
             </p>
             <p className="mt-5 max-w-[58ch] text-base/7 text-pretty text-forest/85 sm:text-sm/6">
@@ -219,7 +220,7 @@ function HeroPhotoStack() {
     <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
       <PhotoFrame
         src="/images/monon-trail-01.webp"
-        label="Broad Ripple Monon"
+        label="Indianapolis | Broad Ripple | Monon"
         caption="The usual ribbon of shade, bridges, and questionable pace discipline."
         alt="The Monon Trail bridge over water in Broad Ripple."
         icon={MapPinned}
@@ -237,9 +238,9 @@ function HeroPhotoStack() {
       <div className="absolute -bottom-8 -left-5 hidden w-48 sm:block">
         <MiniPhoto
           src="/images/half-liter-bbq.jpg"
-          label="Post-run beers"
+          label="Post-run plates"
           alt="Half Liter BBQ patio after a run."
-          icon={Beer}
+          icon={Beef}
         />
       </div>
     </div>
@@ -293,7 +294,7 @@ function AboutSection() {
             Broad Ripple Run Co. is less formal club, more recurring group-chat
             idea that made it onto a calendar. We start around Monon Place, hop
             onto the trail, and keep the run friendly enough that everyone can
-            still argue about the beer stop.
+            still argue about the pool dip and the patio order.
           </p>
         </div>
 
@@ -401,7 +402,8 @@ function PostRunPlans() {
           </div>
           <p className="max-w-[50ch] text-base/7 text-pretty text-forest/80 sm:text-sm/6">
             The route is predictable. The hangout is democratic, emotional, and
-            heavily influenced by who mentions fries first.
+            split between pool dips, patio plates, and whoever mentions fries
+            first.
           </p>
         </div>
 
@@ -453,8 +455,8 @@ function HotDayClause() {
             If it&apos;s brutally hot, we&apos;re jumping in the pool first.
           </h2>
           <p className="mt-6 max-w-[57ch] text-base/7 text-pretty text-cream/85 sm:text-sm/6">
-            Quick reset at Monon Place, then beers. Hydration comes in many
-            forms.
+            Quick reset at Monon Place, then plates, patio, and a cold drink.
+            Hydration comes in many forms.
           </p>
         </div>
 
